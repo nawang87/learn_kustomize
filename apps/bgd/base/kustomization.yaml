@@ -1,4 +1,4 @@
-namespace: bgd
+namespace: lama
 resources:
 - bgd-svc.yaml
 - bgd-deployment.yaml
