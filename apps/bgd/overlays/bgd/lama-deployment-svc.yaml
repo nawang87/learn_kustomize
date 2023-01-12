@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: lamadai
+  name: lamadai
+  namespace: lama
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lamadai
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: lamadai
+    spec:
+      containers:
+      - image: nawang81/lama_k8s:latest
+        name: lamadai
+        env:
+        - name: COLOR
+          value: "blue"
+        resources: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: lamadai
+  name: lamadai
+  namespace: lama
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: lamadai
+---
