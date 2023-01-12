@@ -1,1 +1,2 @@
-# learn_kustomize
+# openshift-gitops-examples
+GitOps scenario &amp; workshop manifests
