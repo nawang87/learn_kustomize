@@ -14,7 +14,7 @@ spec:
                 name: lama-service
                 port:
                   number: 8080
-          - path: /lamadai
+          - path: /lama
             pathType: Prefix
             backend:
               service:
