@@ -42,3 +42,21 @@ spec:
   selector:
     app: lamadai2
 ---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lama2
+spec:
+  rules:
+    - host: lamadai.devnation
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: lamadai2-service
+                port:
+                  number: 8080
+---
