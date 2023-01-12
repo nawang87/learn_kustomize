@@ -19,7 +19,7 @@ spec:
         app: lama
     spec:
       containers:
-      - image: nawang81/lama_k8s:latest
+      - image: quay.io/redhatworkshops/bgd:latest
         name: lama
         env:
         - name: COLOR
