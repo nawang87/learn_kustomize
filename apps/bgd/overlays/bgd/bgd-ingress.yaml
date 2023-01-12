@@ -1,34 +1,17 @@
----
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: lama3
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
+  name: lama
 spec:
   rules:
-    - host: lamadai.devnation
+    - host: lama.devnation
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: lamadai-service
+                name: lama-service
                 port:
                   number: 8080
-          - path: /v2(/|$)(.*)
-            pathType: Prefix
-            backend:
-              service:
-                name: lamanginx-service
-                port:
-                  number: 80
-          - path: /v3(/|$)(.*)
-            pathType: Prefix
-            backend:
-              service:
-                name: lamanginx2-service
-                port:
-                  number: 80
 ---
