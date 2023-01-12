@@ -14,10 +14,10 @@ spec:
                 name: lama
                 port:
                   number: 8080
-    - host: lamadai.devnation
+    - host: lama.devnation
       http:
         paths:
-          - path: /
+          - path: /lamadai
             pathType: Prefix
             backend:
               service:
