@@ -4,7 +4,7 @@ kind: Service
 metadata:
   labels:
     app: lama
-  name: lama
+  name: lama-service
   namespace: lama
 spec:
   type: NodePort

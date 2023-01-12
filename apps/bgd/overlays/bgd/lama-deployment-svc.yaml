@@ -31,7 +31,7 @@ kind: Service
 metadata:
   labels:
     app: lamadai
-  name: lamadai
+  name: lamadai-service
   namespace: lama
 spec:
   type: NodePort
