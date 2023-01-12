@@ -25,7 +25,7 @@ spec:
                 name: lamadai-service
                 port:
                   number: 8080
-          - path: /lamadai
+          - path: "/lamadai"
             pathType: Prefix
             backend:
               service:
