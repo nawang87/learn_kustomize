@@ -32,4 +32,11 @@ spec:
                 name: lamadai2-service
                 port:
                   number: 8080
+          - path: /lamanginx
+            pathType: Prefix
+            backend:
+              service:
+                name: lamanginx-service
+                port:
+                  number: 80
 ---
