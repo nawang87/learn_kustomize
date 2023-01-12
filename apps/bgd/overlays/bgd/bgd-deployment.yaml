@@ -3,24 +3,24 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: bgd
-  name: bgd
-  namespace: bgd
+    app: lama
+  name: lama
+  namespace: lama
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: bgd
+      app: lama
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: bgd
+        app: lama
     spec:
       containers:
       - image: quay.io/redhatworkshops/bgd:latest
-        name: bgd
+        name: lama
         env:
         - name: COLOR
           value: "blue"
