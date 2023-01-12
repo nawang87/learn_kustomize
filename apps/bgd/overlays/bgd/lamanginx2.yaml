@@ -19,7 +19,7 @@ spec:
         app: lamanginx-2
     spec:
       containers:
-      - image: nawang81/lamanginx:2.0.0
+      - image: nawang81/lamanginx:3.0.0
         name: lamanginx-2
         env:
         - name: COLOR
