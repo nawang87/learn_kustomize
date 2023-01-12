@@ -21,5 +21,5 @@ spec:
               service:
                 name: lamadai-service
                 port:
-                  number: 8081
+                  number: 8080
 ---
