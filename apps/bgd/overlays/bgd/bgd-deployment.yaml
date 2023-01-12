@@ -26,3 +26,20 @@ spec:
           value: "green"
         resources: {}
 ---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: lama
+  name: lama-service
+  namespace: lama
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: lama
+---
+
