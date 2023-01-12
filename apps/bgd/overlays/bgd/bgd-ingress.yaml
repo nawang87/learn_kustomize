@@ -4,13 +4,13 @@ kind: Ingress
 metadata:
   name: lama
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
     - host: lama.devnation
       http:
         paths:
-          - path: /
+          - path: 
             pathType: Prefix
             backend:
               service:
