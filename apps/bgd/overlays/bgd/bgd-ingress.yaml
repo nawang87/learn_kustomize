@@ -7,16 +7,6 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   rules:
-    - host: lama.devnation
-      http:
-        paths:
-          - path: 
-            pathType: Prefix
-            backend:
-              service:
-                name: lama-service
-                port:
-                  number: 8080
     - host: lamadai.devnation
       http:
         paths:
