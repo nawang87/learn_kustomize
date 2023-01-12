@@ -23,6 +23,6 @@ spec:
         name: lama
         env:
         - name: COLOR
-          value: "blue"
+          value: "green"
         resources: {}
 ---
