@@ -7,7 +7,7 @@ metadata:
   name: lama
   namespace: lama
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: lama
@@ -23,6 +23,6 @@ spec:
         name: lama
         env:
         - name: COLOR
-          value: "green"
+          value: "red"
         resources: {}
 ---
